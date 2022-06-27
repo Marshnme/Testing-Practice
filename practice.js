@@ -1,4 +1,6 @@
-const capitalize = () => {};
+const capitalize = () => {
+	return "Hello";
+};
 
 const reverseString = () => {};
 

@@ -1,6 +1,26 @@
 {
-  "devDependencies": {
-    "@babel/preset-env": "^7.18.2",
-    "jest": "^28.1.1"
-  }
+	"name": "testing-practice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "practice.js",
+	"scripts": {
+		"test": "jest",
+		"watch": "jest --watchAll"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Marshnme/Testing-Practice.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Marshnme/Testing-Practice/issues"
+	},
+	"homepage": "https://github.com/Marshnme/Testing-Practice#readme",
+	"devDependencies": {
+		"@babel/core": "^7.18.5",
+		"@babel/preset-env": "^7.18.2",
+		"babel-jest": "^28.1.1",
+		"jest": "^28.1.1"
+	}
 }
