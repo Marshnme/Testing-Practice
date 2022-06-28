@@ -27,6 +27,11 @@ test("shifts each char one over", () => {
 	expect(caesar("@abz!zd?")).toMatch("bcaae");
 });
 
-// test("returns with first letter capitalized", () => {
-// 	expect(capitalize("hello")).toMatch("Hello");
-// });
+test("return info on numbers in array", () => {
+	expect(analyzeArray([1, 5, 3, 6, 8, 4])).toMatchObject({
+		average: 5,
+		min: 1,
+		max: 8,
+		length: 6,
+	});
+});

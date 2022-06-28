@@ -1,3 +1,5 @@
+import { array } from "yargs";
+
 const capitalize = (string) => {
 	let splitString = string.split("");
 	splitString[0] = splitString[0].toUpperCase();
@@ -69,6 +71,13 @@ const caesar = (string) => {
 	return newWord.join("");
 };
 
-const analyzeArray = () => {};
+const analyzeArray = (array) => {
+	return {
+		average: Math.round(array.reduce((prev, curr) => prev + curr, 0) / 6),
+		min: Math.min(...array),
+		max: Math.max(...array),
+		length: array.length,
+	};
+};
 
 export { capitalize, reverseString, calculator, caesar, analyzeArray };
