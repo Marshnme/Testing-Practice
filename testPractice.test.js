@@ -21,9 +21,11 @@ test("test calculator functions", () => {
 	expect(calculator.divide(4, 2)).toBe(2);
 });
 
-// test("returns with first letter capitalized", () => {
-// 	expect(capitalize("hello")).toMatch("Hello");
-// });
+test("shifts each char one over", () => {
+	expect(caesar("hello")).toMatch("ifmmp");
+	expect(caesar("abzzd")).toMatch("bcaae");
+	expect(caesar("@abz!zd?")).toMatch("bcaae");
+});
 
 // test("returns with first letter capitalized", () => {
 // 	expect(capitalize("hello")).toMatch("Hello");
